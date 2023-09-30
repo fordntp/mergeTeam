@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mergeTeamApp.apps.MergeteamappConfig'
+    'mergeTeamApp.apps.MergeteamappConfig',
+    'channels'
 ]
 
 MIDDLEWARE = [
@@ -69,7 +70,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'mergeTeam.wsgi.application'
-
+ASGI_APPLICATION = "mergeTeam.routing.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
